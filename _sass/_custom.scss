@@ -295,3 +295,20 @@ html:not([data-lang="en"]) body {
 .home .chip * {
   color: var(--global-theme-color);
 }
+
+/* bigger paper thumbnails: widen the badge/preview column */
+@media (min-width: 576px) {
+  ol.bibliography .row > .abbr {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  ol.bibliography .row > .abbr + div,
+  ol.bibliography .row > [id] {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+}
+ol.bibliography .preview {
+  width: 100%;
+  max-width: 100%;
+}

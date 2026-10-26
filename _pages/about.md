@@ -43,7 +43,7 @@ closing_zh: >
 
 我做的是**真正能干活的大模型智能体**——会自己搜索、阅读、推理；并且希望把它们用在最需要的地方：**医学**和**教育**。
 
-- 🩺 **医学深度研究。** 我主导研发了开源模型 [TIMO](https://huggingface.co/TIMO-OSS)：一组轻量级智能体模型（4B / 27B），能够上网检索、阅读证据并推理，回答困难的医学问题。
+- 🩺 **医学深度研究。** 我主导研发了 [TIMO](https://huggingface.co/TIMO-OSS)：一组轻量级智能体模型（4B / 27B，即将开源），能够上网检索、阅读证据并推理，回答困难的医学问题。
 - 🎓 **教育智能体。** 用多智能体系统，从学生"做了什么"而不只是"说了什么"来评估批判性思维，并探索大模型智能体如何重塑在线教与学。
 
 </div>
@@ -53,7 +53,7 @@ Hi! I'm Zekun (泽坤). I'm a graduate student at the [Institute for AI Industry
 
 I build **LLM agents that actually do the work** — searching, reading and reasoning — and I care about putting them where it matters, in **medicine** and **education**.
 
-- 🩺 **Medical deep research.** I lead [TIMO](https://huggingface.co/TIMO-OSS), an open-source family of small agentic models (4B / 27B) that browse the web and reason over evidence to answer hard medical questions.
+- 🩺 **Medical deep research.** I lead [TIMO](https://huggingface.co/TIMO-OSS), a family of small agentic models (4B / 27B, open-source release coming soon) that browse the web and reason over evidence to answer hard medical questions.
 - 🎓 **Agents for education.** Multi-agent systems that assess critical thinking from what students _do_, not only what they say, and that reimagine how people teach and learn online.
 
 </div>
