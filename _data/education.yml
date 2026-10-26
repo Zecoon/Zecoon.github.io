@@ -1,0 +1,14 @@
+# shown on the about page (newest first); *_zh fields are the Chinese version
+- years: 2026 – present
+  degree: Ph.D. Student
+  degree_zh: 博士研究生
+  school: Tsinghua University
+  school_zh: 清华大学
+  detail:
+- years: 2025 – 2026
+  degree: Graduate Student
+  degree_zh: 研究生
+  school: Institute for AI Industry Research (AIR), Tsinghua University
+  school_zh: 清华大学智能产业研究院（AIR）
+  detail: Advised by Prof. Shuo Wang
+  detail_zh: 合作导师：王硕

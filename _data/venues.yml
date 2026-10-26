@@ -1,9 +1,13 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"ACL":
+  url: https://2026.aclweb.org/
+  color: "#c8102e"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"AAAI-W":
+  color: "#1f6feb"
 
-"Vision":
-  color: "#009f36"
+"JCST":
+  url: https://jcst.ict.ac.cn/
+  color: "#2e7d32"
+
+"BEIHAI":
+  color: "#660874"

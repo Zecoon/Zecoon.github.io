@@ -1,0 +1,94 @@
+---
+layout: default
+---
+<div class="post home">
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-name">
+        {{ site.first_name }} {{ site.last_name }}
+        {% if page.native_name %}<span class="native-name">{{ page.native_name }}</span>{% endif %}
+      </h1>
+      <p class="hero-role"><span class="lang-zh">{{ page.subtitle_zh }}</span><span class="lang-en">{{ page.subtitle }}</span></p>
+      {% if page.interests %}
+        <div class="chips">
+          {% for t in page.interests %}<span class="chip"><span class="lang-zh">{{ t.zh }}</span><span class="lang-en">{{ t.en }}</span></span>{% endfor %}
+        </div>
+      {% endif %}
+      <div class="hero-bio">{{ content }}</div>
+      {% if page.social %}
+        <div class="hero-social">{% social_links %}</div>
+      {% endif %}
+    </div>
+    <div class="hero-photo">
+      {% if page.profile.image %}
+        <img src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}">
+      {% else %}
+        <div class="photo-placeholder">{{ site.first_name | slice: 0 }}{{ site.last_name | slice: 0 }}</div>
+      {% endif %}
+      {% if page.profile.more_info %}<div class="more-info">{{ page.profile.more_info }}</div>{% endif %}
+    </div>
+  </section>
+
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="home-section">
+      <h2><a href="{{ '/news/' | relative_url }}"><span class="lang-zh">新闻动态</span><span class="lang-en">News</span></a></h2>
+      {% include news.liquid limit=true %}
+    </section>
+  {% endif %}
+
+  {% if page.selected_papers %}
+    <section class="home-section">
+      <h2><a href="{{ '/publications/' | relative_url }}"><span class="lang-zh">代表论文</span><span class="lang-en">Selected Publications</span></a></h2>
+      <p class="section-note"><span class="lang-zh">查看<a href="{{ '/publications/' | relative_url }}">全部论文</a></span><span class="lang-en">See <a href="{{ '/publications/' | relative_url }}">all publications</a>.</span></p>
+      {% include selected_papers.liquid %}
+    </section>
+  {% endif %}
+
+  {% assign post_count = site.posts | size %}
+  {% if page.latest_posts and page.latest_posts.enabled and post_count > 0 %}
+    <section class="home-section">
+      <h2><a href="{{ '/blog/' | relative_url }}"><span class="lang-zh">最新博客</span><span class="lang-en">Latest Posts</span></a></h2>
+      {% include latest_posts.liquid %}
+    </section>
+  {% endif %}
+
+  {% if site.data.education %}
+    <section class="home-section">
+      <h2><span class="lang-zh">教育经历</span><span class="lang-en">Education</span></h2>
+      <ul class="timeline">
+        {% for e in site.data.education %}
+          <li>
+            <span class="tl-years">{{ e.years }}</span>
+            <div class="tl-body">
+              <span class="lang-zh"><strong>{{ e.school_zh }}</strong> · {{ e.degree_zh }}</span>
+              <span class="lang-en"><strong>{{ e.degree }}</strong>, {{ e.school }}</span>
+              {% if e.detail %}<div class="tl-detail"><span class="lang-zh">{{ e.detail_zh }}</span><span class="lang-en">{{ e.detail }}</span></div>{% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if site.data.honors %}
+    <section class="home-section">
+      <h2><span class="lang-zh">荣誉奖项</span><span class="lang-en">Honors &amp; Awards</span></h2>
+      <ul class="honors">
+        {% for h in site.data.honors %}
+          <li>
+            <span class="tl-years">{{ h.year }}</span>
+            <span class="lang-zh">{{ h.title_zh }}{% if h.note_zh %} <span class="muted">（{{ h.note_zh }}）</span>{% endif %}</span>
+            <span class="lang-en">{{ h.title }}{% if h.note %} <span class="muted">({{ h.note }})</span>{% endif %}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.closing %}
+    <section class="home-section closing">
+      <div class="lang-zh">{{ page.closing_zh | markdownify }}</div>
+      <div class="lang-en">{{ page.closing | markdownify }}</div>
+    </section>
+  {% endif %}
+</div>
