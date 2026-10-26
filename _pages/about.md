@@ -6,7 +6,7 @@ subtitle: Institute for AI Industry Research (AIR), Tsinghua University
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: # TODO: put your photo at assets/img/prof_pic.jpg and set prof_pic.jpg here
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Beijing, China</p>
