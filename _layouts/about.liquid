@@ -135,7 +135,18 @@ layout: default
         <div><b id="like-count">–</b><span class="lang-zh">点个赞</span><span class="lang-en">Likes</span></div>
       </button>
     </div>
-    {% if page.visitor_map %}<div class="visitor-map">{{ page.visitor_map }}</div>{% endif %}
+    {% if page.visitor_map %}
+      <div class="visitor-map" id="visitor-map">{{ page.visitor_map }}</div>
+      <script>
+        setTimeout(function () {
+          var box = document.getElementById("visitor-map");
+          if (box && !box.querySelector("svg, canvas, iframe, img")) {
+            box.insertAdjacentHTML("beforeend",
+              '<a href="https://mapmyvisitors.com/web/1c966" target="_blank" rel="noopener"><img class="map-fallback" src="https://mapmyvisitors.com/map.png?d=6wqg_AG1VM6jdTcJfssiuomr3wfJ0tTm7xi3gz8sdZ4&cl=ffffff" alt="visitor map"></a>');
+          }
+        }, 10000);
+      </script>
+    {% endif %}
   </section>
   <script defer src="https://events.vercount.one/js"></script>
   <script>

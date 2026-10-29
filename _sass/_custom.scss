@@ -689,4 +689,8 @@ html[data-theme="dark"] .like-btn > i {
     grid-column: 1 / -1;
   }
 }
-
+.visitor-map .map-fallback {
+  width: 100%;
+  max-width: 640px;
+  image-rendering: auto;
+}
