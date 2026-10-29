@@ -3,6 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
+tab_title: 李泽坤（Li Zekun）的个人主页 | 名片 # 浏览器标签页标题（本地 metadata.liquid 覆盖）
 first_name: Zekun
 middle_name:
 last_name: Li
@@ -14,7 +15,7 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: Zekun Li, 李泽坤, Tsinghua, LLM agent, multi-agent, AI for education, critical thinking, deep research, medical AI
 lang: zh-CN # bilingual: zh default, en via toggle (assets/js/i18n.js)
-icon: 🔬
+icon: 👨‍💼
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://zekunli.com
