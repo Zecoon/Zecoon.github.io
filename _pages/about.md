@@ -16,8 +16,8 @@ profile:
       <img class="xhs-qr" src="/assets/img/xhs_card.jpg" alt="小红书二维码 / RedNote QR code" loading="lazy">
     </a>
 
+highlight: { zh: 清华 TIMO 系列医学大模型 · 一作, en: Tsinghua TIMO Medical LLM Series · First Author }
 interests:
-  - { zh: 清华 TIMO 系列医学大模型 · 一作 · 主导, en: Tsinghua TIMO Medical LLMs · First Author & Lead }
   - { zh: Agentic 大模型, en: Agentic LLMs }
   - { zh: 强化学习, en: Reinforcement Learning }
   - { zh: 多智能体系统, en: Multi-Agent Systems }
@@ -35,30 +35,15 @@ latest_posts:
   scrollable: true
   limit: 3
 
-closing: >
-  I'm always happy to chat about agents, medical AI, or anything in between —
-  feel free to reach out via email ([li-zk25@mails.tsinghua.edu.cn](mailto:li-zk25@mails.tsinghua.edu.cn)) or [GitHub](https://github.com/Zecoon). 👋
-closing_zh: >
-  欢迎交流智能体、医学 AI 或任何有意思的话题，可以发邮件（[li-zk25@mails.tsinghua.edu.cn](mailto:li-zk25@mails.tsinghua.edu.cn) / [cqu_lzk@163.com](mailto:cqu_lzk@163.com)）或通过 [GitHub](https://github.com/Zecoon) 联系我。👋
 ---
 
 <div class="lang-zh" markdown="1">
 
-你好！我是李泽坤，目前在[清华大学智能产业研究院（AIR）](https://air.tsinghua.edu.cn/)攻读硕士学位，2028 年起将在清华继续攻读计算机科学与技术博士学位。
-
-我做的是**真正能干活的大模型智能体**——会自己搜索、阅读、推理；并且希望把它们用在最需要的地方：**医学**和**教育**。
-
-- 🩺 **医学深度研究。** 我主导研发了 [TIMO](https://huggingface.co/TIMO-OSS)：一组轻量级智能体模型（4B / 27B，即将开源），能够上网检索、阅读证据并推理，回答困难的医学问题。
-- 🎓 **教育智能体。** 用多智能体系统，从学生"做了什么"而不只是"说了什么"来评估批判性思维，并探索大模型智能体如何重塑在线教与学。
+坐标北京，医学基座大模型训练。本项目常年持有数千 G 算力，欢迎任何线上线下链接 / 喝茶 / 合作。欢迎 AI / 医学背景的同学加入我们，把 TIMO 系列打造成银河战舰！🚀
 
 </div>
 <div class="lang-en" markdown="1">
 
-Hi! I'm Zekun (泽坤). I'm a master's student at the [Institute for AI Industry Research (AIR)](https://air.tsinghua.edu.cn/), Tsinghua University, and will start my Ph.D. in Computer Science and Technology at Tsinghua in 2028.
-
-I build **LLM agents that actually do the work** — searching, reading and reasoning — and I care about putting them where it matters, in **medicine** and **education**.
-
-- 🩺 **Medical deep research.** I lead [TIMO](https://huggingface.co/TIMO-OSS), a family of small agentic models (4B / 27B, open-source release coming soon) that browse the web and reason over evidence to answer hard medical questions.
-- 🎓 **Agents for education.** Multi-agent systems that assess critical thinking from what students _do_, not only what they say, and that reimagine how people teach and learn online.
+Based in Beijing, training medical foundation LLMs. Our project runs on thousands of GPUs' worth of compute — always happy to connect, grab a tea, or collaborate, online or offline. People with AI or medical backgrounds are welcome to join us and build the TIMO series into a galactic battleship! 🚀
 
 </div>
