@@ -10,6 +10,7 @@ profile:
   image: prof_pic.jpg
   more_info: >
     <p>📍 <span class="lang-zh">北京</span><span class="lang-en">Beijing, China</span></p>
+    <p class="emails"><a href="mailto:li-zk25@mails.tsinghua.edu.cn">✉️ li-zk25@mails.tsinghua.edu.cn</a><a href="mailto:cqu_lzk@163.com">✉️ cqu_lzk@163.com</a></p>
     <a class="xhs-badge" href="https://www.xiaohongshu.com/user/profile/615291d10000000002027e36" target="_blank" rel="noopener">
       <span class="xhs-logo">小红书</span><span class="lang-zh">某某坤同学</span><span class="lang-en">RedNote: 某某坤同学</span>
       <img class="xhs-qr" src="/assets/img/xhs_card.jpg" alt="小红书二维码 / RedNote QR code" loading="lazy">
@@ -36,9 +37,9 @@ latest_posts:
 
 closing: >
   I'm always happy to chat about agents, medical AI, or anything in between —
-  feel free to reach out via [GitHub](https://github.com/Zecoon) or email. 👋
+  feel free to reach out via email ([li-zk25@mails.tsinghua.edu.cn](mailto:li-zk25@mails.tsinghua.edu.cn)) or [GitHub](https://github.com/Zecoon). 👋
 closing_zh: >
-  欢迎交流智能体、医学 AI 或任何有意思的话题，可以通过 [GitHub](https://github.com/Zecoon) 或邮件联系我。👋
+  欢迎交流智能体、医学 AI 或任何有意思的话题，可以发邮件（[li-zk25@mails.tsinghua.edu.cn](mailto:li-zk25@mails.tsinghua.edu.cn) / [cqu_lzk@163.com](mailto:cqu_lzk@163.com)）或通过 [GitHub](https://github.com/Zecoon) 联系我。👋
 ---
 
 <div class="lang-zh" markdown="1">

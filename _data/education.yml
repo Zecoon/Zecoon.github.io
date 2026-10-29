@@ -4,11 +4,21 @@
   degree_zh: 博士研究生
   school: Tsinghua University
   school_zh: 清华大学
+  logo: tsinghua.png
   detail:
 - years: 2025 – 2026
   degree: Graduate Student
   degree_zh: 研究生
   school: Institute for AI Industry Research (AIR), Tsinghua University
   school_zh: 清华大学智能产业研究院（AIR）
+  logo: tsinghua.png
   detail: Advised by Prof. Shuo Wang
   detail_zh: 合作导师：王硕
+- years: 2021 – 2025
+  degree: B.Eng. in Data Science and Big Data Technology
+  degree_zh: 本科 · 数据科学与大数据技术
+  school: School of Big Data & Software Engineering, Chongqing University
+  school_zh: 重庆大学 大数据与软件学院
+  logo: cqu.png
+  detail: Ranked 1st in major; recommended for admission to Tsinghua University (entrance-exam exempted)
+  detail_zh: 专业第一，推免保研至清华大学

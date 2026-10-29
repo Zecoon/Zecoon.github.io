@@ -59,6 +59,7 @@ layout: default
         {% for e in site.data.education %}
           <li>
             <span class="tl-years">{{ e.years }}</span>
+            {% if e.logo %}<img class="tl-logo" src="{{ e.logo | prepend: '/assets/img/logos/' | relative_url }}" alt="{{ e.school }}" loading="lazy">{% endif %}
             <div class="tl-body">
               <span class="lang-zh"><strong>{{ e.school_zh }}</strong> · {{ e.degree_zh }}</span>
               <span class="lang-en"><strong>{{ e.degree }}</strong>, {{ e.school }}</span>
