@@ -10,7 +10,7 @@ profile:
   image: prof_pic.jpg
   more_info: >
     <p>📍 <span class="lang-zh">北京</span><span class="lang-en">Beijing, China</span></p>
-    <a class="xhs-badge" href="/assets/img/xhs_card.jpg" target="_blank" rel="noopener">
+    <a class="xhs-badge" href="https://www.xiaohongshu.com/user/profile/615291d10000000002027e36" target="_blank" rel="noopener">
       <span class="xhs-logo">小红书</span><span class="lang-zh">某某坤同学</span><span class="lang-en">RedNote: 某某坤同学</span>
       <img class="xhs-qr" src="/assets/img/xhs_card.jpg" alt="小红书二维码 / RedNote QR code" loading="lazy">
     </a>
