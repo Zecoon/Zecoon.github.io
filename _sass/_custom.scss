@@ -79,6 +79,16 @@ b {
   color: var(--global-text-color-light);
   margin: 0.3rem 0 0.8rem;
 }
+.home .hero-affil {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin: 0.45rem 0 0;
+}
+.home .hero-affil i {
+  color: var(--global-theme-color);
+  margin-right: 0.2rem;
+}
 .home .chips {
   display: flex;
   flex-wrap: wrap;

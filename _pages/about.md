@@ -5,6 +5,7 @@ permalink: /
 native_name: 李泽坤
 subtitle: <i class="fa-solid fa-building-columns"></i> M.S. Student @ <a href="https://air.tsinghua.edu.cn/en/">AIR, Tsinghua University</a> · Incoming Ph.D. (2028)
 subtitle_zh: <i class="fa-solid fa-building-columns"></i> <a href="https://air.tsinghua.edu.cn/">清华大学智能产业研究院（AIR）</a>硕士研究生 · 2028 年起攻读博士
+affiliation: { zh: 计算机科学与技术专业 · 清华大学 · 智能产业研究院（Institute for AI Industry Research）, en: Computer Science & Technology · Tsinghua University · Institute for AI Industry Research (AIR) }
 
 profile:
   image: prof_pic.jpg

@@ -8,6 +8,9 @@ layout: default
         {{ site.first_name }} {{ site.last_name }}
         {% if page.native_name %}<span class="native-name">{{ page.native_name }}</span>{% endif %}
       </h1>
+      {% if page.affiliation %}
+        <p class="hero-affil"><i class="fa-solid fa-graduation-cap"></i> <span class="lang-zh">{{ page.affiliation.zh }}</span><span class="lang-en">{{ page.affiliation.en }}</span></p>
+      {% endif %}
       <p class="hero-role"><span class="lang-zh">{{ page.subtitle_zh }}</span><span class="lang-en">{{ page.subtitle }}</span></p>
       {% if page.highlight %}
         <div class="chips chips-highlight"><span class="chip chip-highlight"><span class="lang-zh">{{ page.highlight.zh }}</span><span class="lang-en">{{ page.highlight.en }}</span></span></div>
