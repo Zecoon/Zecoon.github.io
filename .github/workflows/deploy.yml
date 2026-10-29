@@ -106,3 +106,11 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+      - name: Mirror to China server 🇨🇳
+        # optional: skipped unless the CN_DEPLOY_KEY secret is set; the server only lets this key rsync into the site dir
+        if: github.event_name != 'pull_request' && env.CN_DEPLOY_KEY != ''
+        run: |
+          mkdir -p ~/.ssh
+          echo "$CN_DEPLOY_KEY" > ~/.ssh/cn_deploy && chmod 600 ~/.ssh/cn_deploy
+          echo "180.76.103.200 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMNLaf+maBvkuwvycbUBYULgHiVmPYX8ldf6AsSDsu9C" >> ~/.ssh/known_hosts
+          rsync -az --delete -e "ssh -i ~/.ssh/cn_deploy" _site/ deploy@180.76.103.200:/
