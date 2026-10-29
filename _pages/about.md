@@ -3,8 +3,8 @@ layout: about
 title: about
 permalink: /
 native_name: 李泽坤
-subtitle: Ph.D. Student @ <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>
-subtitle_zh: <a href="https://www.tsinghua.edu.cn/">清华大学</a> 博士研究生
+subtitle: M.S. Student @ <a href="https://air.tsinghua.edu.cn/en/">AIR, Tsinghua University</a> · Incoming Ph.D. (2028)
+subtitle_zh: <a href="https://air.tsinghua.edu.cn/">清华大学智能产业研究院（AIR）</a>硕士研究生 · 2028 年起攻读博士
 
 profile:
   image: prof_pic.jpg
@@ -17,10 +17,10 @@ profile:
     </a>
 
 interests:
-  - { zh: 大模型智能体, en: LLM Agents }
-  - { zh: 深度研究, en: Deep Research }
-  - { zh: 医学人工智能, en: Medical AI }
-  - { zh: AI + 教育, en: AI for Education }
+  - { zh: 清华 TIMO 系列医学大模型 · 一作 · 主导, en: Tsinghua TIMO Medical LLMs · First Author & Lead }
+  - { zh: Agentic 大模型, en: Agentic LLMs }
+  - { zh: 强化学习, en: Reinforcement Learning }
+  - { zh: 多智能体系统, en: Multi-Agent Systems }
 
 selected_papers: true
 social: true
@@ -44,7 +44,7 @@ closing_zh: >
 
 <div class="lang-zh" markdown="1">
 
-你好！我是李泽坤，目前在[清华大学智能产业研究院（AIR）](https://air.tsinghua.edu.cn/)读研究生，接下来将在清华继续攻读博士学位。
+你好！我是李泽坤，目前在[清华大学智能产业研究院（AIR）](https://air.tsinghua.edu.cn/)攻读硕士学位，2028 年起将在清华继续攻读计算机科学与技术博士学位。
 
 我做的是**真正能干活的大模型智能体**——会自己搜索、阅读、推理；并且希望把它们用在最需要的地方：**医学**和**教育**。
 
@@ -54,7 +54,7 @@ closing_zh: >
 </div>
 <div class="lang-en" markdown="1">
 
-Hi! I'm Zekun (泽坤). I'm a graduate student at the [Institute for AI Industry Research (AIR)](https://air.tsinghua.edu.cn/), Tsinghua University, and will continue my Ph.D. journey at Tsinghua.
+Hi! I'm Zekun (泽坤). I'm a master's student at the [Institute for AI Industry Research (AIR)](https://air.tsinghua.edu.cn/), Tsinghua University, and will start my Ph.D. in Computer Science and Technology at Tsinghua in 2028.
 
 I build **LLM agents that actually do the work** — searching, reading and reasoning — and I care about putting them where it matters, in **medicine** and **education**.
 

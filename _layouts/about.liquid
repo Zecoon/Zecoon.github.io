@@ -77,7 +77,7 @@ layout: default
       <ul class="honors">
         {% for h in site.data.honors %}
           <li>
-            <span class="tl-years">{{ h.year }}</span>
+            <span class="tl-years">{% if h.year_zh %}<span class="lang-zh">{{ h.year_zh }}</span><span class="lang-en">{{ h.year_en }}</span>{% else %}{{ h.year }}{% endif %}</span>
             <span class="lang-zh">{{ h.title_zh }}{% if h.note_zh %} <span class="muted">（{{ h.note_zh }}）</span>{% endif %}</span>
             <span class="lang-en">{{ h.title }}{% if h.note %} <span class="muted">({{ h.note }})</span>{% endif %}</span>
           </li>
