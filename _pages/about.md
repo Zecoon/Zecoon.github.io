@@ -22,7 +22,6 @@ interests:
   - { zh: 强化学习, en: Reinforcement Learning }
   - { zh: 多智能体系统, en: Multi-Agent Systems }
 
-visitor_map_src: https://mapmyvisitors.com/map.js?d=6wqg_AG1VM6jdTcJfssiuomr3wfJ0tTm7xi3gz8sdZ4&cl=ffffff&w=a
 
 selected_papers: true
 social: true
