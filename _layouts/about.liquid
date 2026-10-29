@@ -34,17 +34,17 @@ layout: default
 
   {% if site.data.education %}
     <section class="home-section">
-      <h2><span class="lang-zh">教育经历</span><span class="lang-en">Education</span></h2>
-      <ul class="timeline">
+      <h2><span class="sec-ico"><i class="fa-solid fa-graduation-cap"></i></span><span class="lang-zh">教育经历</span><span class="lang-en">Education</span></h2>
+      <ul class="edu-list">
         {% for e in site.data.education %}
-          <li>
-            <span class="tl-years">{{ e.years }}</span>
-            {% if e.logo %}<img class="tl-logo" src="{{ e.logo | prepend: '/assets/img/logos/' | relative_url }}" alt="{{ e.school }}" loading="lazy">{% endif %}
-            <div class="tl-body">
-              <span class="lang-zh"><strong>{{ e.school_zh }}</strong> · {{ e.degree_zh }}</span>
-              <span class="lang-en"><strong>{{ e.degree }}</strong>, {{ e.school }}</span>
-              {% if e.detail %}<div class="tl-detail"><span class="lang-zh">{{ e.detail_zh }}</span><span class="lang-en">{{ e.detail }}</span></div>{% endif %}
+          <li class="edu-item">
+            {% if e.logo %}<img class="edu-logo" src="{{ e.logo | prepend: '/assets/img/logos/' | relative_url }}" alt="{{ e.school }}" loading="lazy">{% endif %}
+            <div class="edu-body">
+              <div class="edu-school"><span class="lang-zh">{{ e.school_zh }}</span><span class="lang-en">{{ e.school }}</span></div>
+              <div class="edu-degree"><span class="lang-zh">{{ e.degree_zh }}</span><span class="lang-en">{{ e.degree }}</span></div>
+              {% if e.detail %}<div class="edu-detail"><i class="fa-solid fa-star"></i> <span class="lang-zh">{{ e.detail_zh }}</span><span class="lang-en">{{ e.detail }}</span></div>{% endif %}
             </div>
+            <span class="year-pill">{{ e.years }}</span>
           </li>
         {% endfor %}
       </ul>
@@ -53,14 +53,32 @@ layout: default
 
   {% if page.announcements and page.announcements.enabled %}
     <section class="home-section">
-      <h2><a href="{{ '/news/' | relative_url }}"><span class="lang-zh">新闻动态</span><span class="lang-en">News</span></a></h2>
-      {% include news.liquid limit=true %}
+      <h2><span class="sec-ico"><i class="fa-solid fa-bullhorn"></i></span><a href="{{ '/news/' | relative_url }}"><span class="lang-zh">新闻动态</span><span class="lang-en">News</span></a></h2>
+      <div class="news-grid">
+        {% assign news_items = site.news | reverse %}
+        {% for item in news_items limit: page.announcements.limit %}
+          <article class="news-card{% unless item.image %} news-card-noimg{% endunless %}">
+            {% if item.image %}
+              <div class="news-photo"><img src="{{ item.image | prepend: '/assets/img/news/' | relative_url }}" alt="" loading="lazy"></div>
+            {% else %}
+              <div class="news-photo news-photo-icon"><i class="fa-solid {{ item.icon | default: 'fa-star' }}"></i></div>
+            {% endif %}
+            <div class="news-body">
+              <div class="news-meta">
+                <span class="news-tag"><i class="fa-solid {{ item.icon | default: 'fa-star' }}"></i> <span class="lang-zh">{{ item.tag_zh }}</span><span class="lang-en">{{ item.tag_en }}</span></span>
+                <time>{{ item.date | date: '%Y.%m.%d' }}</time>
+              </div>
+              <div class="news-text">{{ item.content | remove: '<p>' | remove: '</p>' }}</div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
     </section>
   {% endif %}
 
   {% if page.selected_papers %}
     <section class="home-section">
-      <h2><a href="{{ '/publications/' | relative_url }}"><span class="lang-zh">代表论文</span><span class="lang-en">Selected Publications</span></a></h2>
+      <h2><span class="sec-ico"><i class="fa-solid fa-book-open"></i></span><a href="{{ '/publications/' | relative_url }}"><span class="lang-zh">代表论文</span><span class="lang-en">Selected Publications</span></a></h2>
       <p class="section-note"><span class="lang-zh">查看<a href="{{ '/publications/' | relative_url }}">全部论文</a></span><span class="lang-en">See <a href="{{ '/publications/' | relative_url }}">all publications</a>.</span></p>
       {% include selected_papers.liquid %}
     </section>
@@ -68,13 +86,18 @@ layout: default
 
   {% if site.data.honors %}
     <section class="home-section">
-      <h2><span class="lang-zh">荣誉奖项</span><span class="lang-en">Honors &amp; Awards</span></h2>
-      <ul class="honors">
+      <h2><span class="sec-ico"><i class="fa-solid fa-trophy"></i></span><span class="lang-zh">荣誉奖项</span><span class="lang-en">Honors &amp; Awards</span></h2>
+      <ul class="honor-grid">
         {% for h in site.data.honors %}
-          <li>
-            <span class="tl-years">{% if h.year_zh %}<span class="lang-zh">{{ h.year_zh }}</span><span class="lang-en">{{ h.year_en }}</span>{% else %}{{ h.year }}{% endif %}</span>
-            <span class="lang-zh">{{ h.title_zh }}{% if h.note_zh %} <span class="muted">（{{ h.note_zh }}）</span>{% endif %}</span>
-            <span class="lang-en">{{ h.title }}{% if h.note %} <span class="muted">({{ h.note }})</span>{% endif %}</span>
+          <li class="honor-card">
+            <span class="honor-ico"><i class="fa-solid {{ h.icon | default: 'fa-award' }}"></i></span>
+            <div class="honor-body">
+              <div class="honor-title"><span class="lang-zh">{{ h.title_zh }}</span><span class="lang-en">{{ h.title }}</span></div>
+              <div class="honor-meta">
+                <span class="year-pill">{% if h.year_zh %}<span class="lang-zh">{{ h.year_zh }}</span><span class="lang-en">{{ h.year_en }}</span>{% else %}{{ h.year }}{% endif %}</span>
+                {% if h.note_zh %}<span class="muted"><span class="lang-zh">{{ h.note_zh }}</span><span class="lang-en">{{ h.note }}</span></span>{% endif %}
+              </div>
+            </div>
           </li>
         {% endfor %}
       </ul>
@@ -84,7 +107,7 @@ layout: default
   {% assign post_count = site.posts | size %}
   {% if page.latest_posts and page.latest_posts.enabled and post_count > 0 %}
     <section class="home-section">
-      <h2><a href="{{ '/blog/' | relative_url }}"><span class="lang-zh">最新博客</span><span class="lang-en">Latest Posts</span></a></h2>
+      <h2><span class="sec-ico"><i class="fa-solid fa-pen-nib"></i></span><a href="{{ '/blog/' | relative_url }}"><span class="lang-zh">最新博客</span><span class="lang-en">Latest Posts</span></a></h2>
       {% include latest_posts.liquid %}
     </section>
   {% endif %}
