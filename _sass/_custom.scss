@@ -596,3 +596,97 @@ html[data-theme="dark"] .honor-card:last-child:nth-child(odd) {
     margin-left: 4.2rem;
   }
 }
+
+/* ---------- visitors / likes ---------- */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  text-align: left;
+  font: inherit;
+}
+.stat-card > i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--global-theme-color);
+  font-size: 1.05rem;
+}
+.stat-card b {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+.stat-card span {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+}
+.like-btn {
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
+}
+.like-btn:hover {
+  border-color: #ff4d6d;
+  transform: translateY(-2px);
+}
+.like-btn > i {
+  background: #ffe8ec;
+  color: #ff4d6d;
+}
+html[data-theme="dark"] .like-btn > i {
+  background: #3b2228;
+}
+.like-btn.liked {
+  border-color: #ff4d6d;
+  cursor: default;
+}
+.like-btn.pop > i {
+  animation: like-pop 0.45s ease;
+}
+@keyframes like-pop {
+  40% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.visitor-map {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  text-align: center;
+  overflow: hidden;
+}
+.visitor-map img,
+.visitor-map canvas,
+.visitor-map iframe {
+  max-width: 100%;
+}
+@media (max-width: 720px) {
+  .stats-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .like-btn {
+    grid-column: 1 / -1;
+  }
+}
+

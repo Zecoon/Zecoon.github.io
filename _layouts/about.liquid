@@ -118,4 +118,48 @@ layout: default
       <div class="lang-en">{{ page.closing | markdownify }}</div>
     </section>
   {% endif %}
+
+  <section class="home-section site-stats">
+    <h2><span class="sec-ico"><i class="fa-solid fa-earth-asia"></i></span><span class="lang-zh">访客</span><span class="lang-en">Visitors</span></h2>
+    <div class="stats-row">
+      <div class="stat-card">
+        <i class="fa-solid fa-eye"></i>
+        <div><b id="busuanzi_value_site_pv">–</b><span class="lang-zh">总访问量</span><span class="lang-en">Page views</span></div>
+      </div>
+      <div class="stat-card">
+        <i class="fa-solid fa-user-group"></i>
+        <div><b id="busuanzi_value_site_uv">–</b><span class="lang-zh">访客数</span><span class="lang-en">Visitors</span></div>
+      </div>
+      <button class="stat-card like-btn" id="like-btn" type="button" aria-pressed="false">
+        <i class="fa-regular fa-heart"></i>
+        <div><b id="like-count">–</b><span class="lang-zh">点个赞</span><span class="lang-en">Likes</span></div>
+      </button>
+    </div>
+    {% if page.visitor_map %}<div class="visitor-map">{{ page.visitor_map }}</div>{% endif %}
+  </section>
+  <script defer src="https://events.vercount.one/js"></script>
+  <script>
+    (function () {
+      var api = "https://abacus.jasoncameron.dev/", key = "zekunli-com/likes";
+      var btn = document.getElementById("like-btn"), out = document.getElementById("like-count");
+      var liked = false;
+      try { liked = localStorage.getItem("zk-liked") === "1"; } catch (e) {}
+      function show(v) { if (typeof v === "number" && v >= 0) out.textContent = v; }
+      function mark() {
+        btn.classList.add("liked");
+        btn.setAttribute("aria-pressed", "true");
+        btn.querySelector("i").className = "fa-solid fa-heart";
+      }
+      if (liked) mark();
+      fetch(api + "get/" + key).then(function (r) { return r.json(); }).then(function (d) { show(d.value); }).catch(function () {});
+      btn.addEventListener("click", function () {
+        if (liked) return;
+        liked = true;
+        mark();
+        btn.classList.add("pop");
+        try { localStorage.setItem("zk-liked", "1"); } catch (e) {}
+        fetch(api + "hit/" + key).then(function (r) { return r.json(); }).then(function (d) { show(d.value); }).catch(function () {});
+      });
+    })();
+  </script>
 </div>
