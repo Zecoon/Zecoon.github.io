@@ -11,8 +11,7 @@ contact_note: >
   Email is the best way to reach me.
 description: >
   Zekun Li (李泽坤), Tsinghua University. LLM agents, multi-agent systems, AI for education, and medical deep research.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+footer_text:
 keywords: Zekun Li, 李泽坤, Tsinghua, LLM agent, multi-agent, AI for education, critical thinking, deep research, medical AI
 lang: zh-CN # bilingual: zh default, en via toggle (assets/js/i18n.js)
 icon: 👨‍💼
