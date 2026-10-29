@@ -128,6 +128,49 @@ b {
 .home .more-info p {
   margin: 0;
 }
+.home .xhs-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.7rem 0.2rem 0.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 36, 66, 0.35);
+  color: var(--global-text-color);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.home .xhs-badge:hover {
+  border-color: #ff2442;
+  text-decoration: none;
+}
+.home .xhs-logo {
+  background: #ff2442;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+}
+.home .hero-photo .xhs-qr {
+  display: none;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+@media (hover: hover) {
+  .home .hero-photo .xhs-badge:hover .xhs-qr {
+    display: block;
+  }
+}
 
 @media (max-width: 720px) {
   .home .hero {

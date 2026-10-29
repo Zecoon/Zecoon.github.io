@@ -4,5 +4,7 @@
 # cv_pdf: /assets/pdf/cv.pdf # TODO: add CV
 # email: TODO@example.com # TODO: public email
 github_username: Zecoon
-# scholar_userid: TODO # Google Scholar ID
+scholar_userid: Bamm7sQAAAAJ # Google Scholar ID
+orcid_id: 0009-0001-6856-6516
+semanticscholar_id: 2447411362
 rss_icon: true

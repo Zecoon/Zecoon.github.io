@@ -9,10 +9,10 @@ last_name: Li
 contact_note: >
   Email is the best way to reach me.
 description: >
-  Zekun Li's homepage. LLM agents, deep research, and medical AI at Tsinghua University.
+  Zekun Li (李泽坤), Tsinghua University. LLM agents, multi-agent systems, AI for education, and medical deep research.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
-keywords: Zekun Li, LLM agent, deep research, medical AI, Tsinghua
+keywords: Zekun Li, 李泽坤, Tsinghua, LLM agent, multi-agent, AI for education, critical thinking, deep research, medical AI
 lang: zh-CN # bilingual: zh default, en via toggle (assets/js/i18n.js)
 icon: 🔬
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
@@ -108,8 +108,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------

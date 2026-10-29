@@ -7,9 +7,13 @@ subtitle: Ph.D. Student @ <a href="https://www.tsinghua.edu.cn/en/">Tsinghua Uni
 subtitle_zh: <a href="https://www.tsinghua.edu.cn/">清华大学</a> 博士研究生
 
 profile:
-  image: # TODO: put your photo at assets/img/prof_pic.jpg and set prof_pic.jpg here
+  image: prof_pic.jpg
   more_info: >
     <p>📍 <span class="lang-zh">北京</span><span class="lang-en">Beijing, China</span></p>
+    <a class="xhs-badge" href="/assets/img/xhs_card.jpg" target="_blank" rel="noopener">
+      <span class="xhs-logo">小红书</span><span class="lang-zh">某某坤同学</span><span class="lang-en">RedNote: 某某坤同学</span>
+      <img class="xhs-qr" src="/assets/img/xhs_card.jpg" alt="小红书二维码 / RedNote QR code" loading="lazy">
+    </a>
 
 interests:
   - { zh: 大模型智能体, en: LLM Agents }
