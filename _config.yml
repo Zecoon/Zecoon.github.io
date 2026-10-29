@@ -14,8 +14,8 @@ description: >
 footer_text:
 keywords: Zekun Li, 李泽坤, Tsinghua, LLM agent, multi-agent, AI for education, critical thinking, deep research, medical AI
 lang: zh-CN # bilingual: zh default, en via toggle (assets/js/i18n.js)
-icon: 👨‍💼
-apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
+icon: favicon.png
+apple_touch_icon: apple-touch-icon.png # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://zekunli.com
 baseurl: # leave blank for a user site
