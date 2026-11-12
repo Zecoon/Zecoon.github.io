@@ -20,6 +20,7 @@ apple_touch_icon: apple-touch-icon.png # image name in /assets/img/ (or a rooted
 url: https://zekunli.com
 baseurl: # leave blank for a user site
 last_updated: true # set to true if you want to display last updated in the footer
+icp_beian: 京ICP备2026078203号 # 页脚备案号，链接到 beian.miit.gov.cn（本地 _includes/footer.liquid 覆盖）
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
