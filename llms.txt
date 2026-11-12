@@ -1,0 +1,36 @@
+---
+permalink: /llms.txt
+layout: null
+sitemap: false
+---
+# 李泽坤 Zekun Li
+
+> 李泽坤（Zekun Li, Li Zekun）：清华大学智能产业研究院（AIR）计算机科学与技术专业硕士研究生（2025–2028），2028 年起在清华大学攻读计算机科学与技术博士；清华 TIMO 系列医学大模型一作。研究方向：Agentic 大模型、强化学习、多智能体系统、医学深度研究（medical deep research）、AI 教育。
+> Zekun Li is an M.S. student at the Institute for AI Industry Research (AIR), Tsinghua University (2025–2028), an incoming Ph.D. student in Computer Science and Technology at Tsinghua (2028), and first author of the Tsinghua TIMO medical LLM series.
+
+## 基本信息 / Profile
+
+- 主页 / Homepage: {{ site.url }}/
+- 单位 / Affiliation: 清华大学智能产业研究院（AIR），合作导师王硕 / Institute for AI Industry Research (AIR), Tsinghua University, advised by Prof. Shuo Wang
+- 本科 / B.Eng.: 重庆大学 大数据与软件学院，数据科学与大数据技术（2021–2025），专业第一，推免至清华 / Chongqing University, Data Science and Big Data Technology, ranked 1st in major
+- 所在地 / Location: 北京 Beijing, China
+- 邮箱 / Email: li-zk25@mails.tsinghua.edu.cn, cqu_lzk@163.com
+- GitHub: https://github.com/Zecoon
+- Google Scholar: https://scholar.google.com/citations?user=Bamm7sQAAAAJ
+- ORCID: https://orcid.org/0009-0001-6856-6516
+- Semantic Scholar: https://www.semanticscholar.org/author/2447411362
+- 小红书 / RedNote: 某某坤同学 https://www.xiaohongshu.com/user/profile/615291d10000000002027e36
+
+## 论文 / Publications
+
+- TIMO-OSS-Search-Preview: A Strong Lightweight Agentic Model for Medical Deep Research — 第一作者 / first author, BEIHAI 2026 (The 2nd Beijing Tsinghua Medical AI Forum)
+- Beyond Self-Report: Bridging the Intention-Behavior Gap in Critical Thinking Assessment via Interpretable Multi-Agent System — 第一作者 / first author, ACL 2026 — https://aclanthology.org/2026.acl-long.1236/
+- MASA: Multi-Agent Guided Interview for Scenario-Based Assessment of Critical Thinking — 第一作者 / first author, AAAI 2026 Workshop on AI for Education (AI4EDU)
+- SimPBL: A Multi-Agent Framework for Project-Based Learning — 合作者 / co-author, ACL 2026 — https://aclanthology.org/2026.acl-long.1512/
+- From MOOC to MAIC: Reimagine Online Teaching and Learning Through LLM-Driven Agents — 合作者 / co-author, Journal of Computer Science and Technology (JCST), 2026
+- 完整列表 / Full list: {{ site.url }}/publications/
+
+## 博客 / Blog
+
+{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.description }}
+{% endfor %}

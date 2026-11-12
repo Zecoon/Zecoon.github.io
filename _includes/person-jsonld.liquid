@@ -1,0 +1,43 @@
+{% comment %}
+  Rich schema.org Person on the home page, so search engines and AI assistants can tie
+  "李泽坤 / Zekun Li" to Tsinghua AIR, the TIMO project, papers and profiles. Included from metadata.liquid.
+{% endcomment %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "{{ site.url }}/",
+    "inLanguage": ["zh-CN", "en"],
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person",
+      "name": "Zekun Li",
+      "alternateName": ["李泽坤", "Li Zekun", "Zecoon", "某某坤同学"],
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}/assets/img/prof_pic.jpg",
+      "jobTitle": "M.S. Student, Institute for AI Industry Research (AIR), Tsinghua University; incoming Ph.D. student in Computer Science and Technology (2028)",
+      "description": "李泽坤（Zekun Li），清华大学智能产业研究院（AIR）计算机科学与技术专业硕士研究生，2028 年起在清华大学攻读博士；清华 TIMO 系列医学大模型一作。研究方向：Agentic 大模型、强化学习、多智能体系统、医学深度研究、AI 教育。Zekun Li is an M.S. student at the Institute for AI Industry Research (AIR), Tsinghua University, an incoming Ph.D. student (2028), and first author of the Tsinghua TIMO medical LLM series, working on agentic LLMs, reinforcement learning, multi-agent systems, medical deep research and AI for education.",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Institute for AI Industry Research (AIR), Tsinghua University",
+        "alternateName": "清华大学智能产业研究院",
+        "url": "https://air.tsinghua.edu.cn/",
+        "parentOrganization": { "@type": "CollegeOrUniversity", "name": "Tsinghua University", "alternateName": "清华大学" }
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Tsinghua University", "alternateName": "清华大学" },
+        { "@type": "CollegeOrUniversity", "name": "Chongqing University", "alternateName": "重庆大学" }
+      ],
+      "knowsAbout": ["Agentic LLMs", "Reinforcement Learning", "GRPO", "Multi-Agent Systems", "Medical Deep Research", "Medical LLMs", "AI for Education", "Critical Thinking Assessment"],
+      "address": { "@type": "PostalAddress", "addressLocality": "Beijing", "addressCountry": "CN" },
+      "email": ["mailto:li-zk25@mails.tsinghua.edu.cn", "mailto:cqu_lzk@163.com"],
+      "sameAs": [
+        "https://github.com/Zecoon",
+        "https://scholar.google.com/citations?user=Bamm7sQAAAAJ",
+        "https://orcid.org/0009-0001-6856-6516",
+        "https://www.semanticscholar.org/author/2447411362",
+        "https://www.xiaohongshu.com/user/profile/615291d10000000002027e36"
+      ]
+    }
+  }
+</script>
