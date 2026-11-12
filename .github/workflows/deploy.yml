@@ -107,7 +107,7 @@ jobs:
         with:
           folder: _site
       - name: Mirror to China server 🇨🇳
-        # optional: skipped unless the CN_DEPLOY_KEY secret is set; the server only lets this key rsync into the site dir
+        # China mirror (Baidu Cloud, ICP-approved): runs when the CN_DEPLOY_KEY secret is set; the server only lets this key rsync into the site dir
         if: github.event_name != 'pull_request' && env.CN_DEPLOY_KEY != ''
         run: |
           mkdir -p ~/.ssh
