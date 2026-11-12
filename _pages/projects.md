@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Research projects and open-source releases.
+description: Research projects by Zekun Li (李泽坤) at Tsinghua AIR, including TIMO, a series of lightweight agentic models for medical deep research.
 nav: true
 nav_order: 3
 display_categories: [research]
