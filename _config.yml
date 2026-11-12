@@ -130,6 +130,8 @@ enable_simple_analytics: false # Simple Analytics identifies a site by its domai
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: JBearAoxs6R_HnhNzbQq_TjWYG5Cy99Fg94hz4OE_Yo # Google Search Console
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+baidu_site_verification: codeva-zLAVHHsVTs # 百度搜索资源平台 ziyuan.baidu.com
+toutiao_site_verification: # 头条搜索站长平台 zhanzhang.toutiao.com
 
 # -----------------------------------------------------------------------------
 # Blog
