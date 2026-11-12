@@ -60,6 +60,9 @@ on:
 permissions:
   contents: write
 
+env:
+  CN_DEPLOY_KEY: ${{ secrets.CN_DEPLOY_KEY }}
+
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
