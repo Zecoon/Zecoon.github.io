@@ -117,3 +117,16 @@ jobs:
           echo "$CN_DEPLOY_KEY" > ~/.ssh/cn_deploy && chmod 600 ~/.ssh/cn_deploy
           echo "180.76.103.200 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMNLaf+maBvkuwvycbUBYULgHiVmPYX8ldf6AsSDsu9C" >> ~/.ssh/known_hosts
           rsync -az --delete -e "ssh -i ~/.ssh/cn_deploy" _site/ deploy@180.76.103.200:/
+      - name: Ping IndexNow (Bing / ChatGPT search) 🔎
+        # tells IndexNow engines every URL in the sitemap changed; key file is /982b5243e1755a2d8263a9f8fededd2f.txt
+        if: github.event_name != 'pull_request'
+        continue-on-error: true
+        run: |
+          python3 - <<'PY'
+          import json, re, urllib.request
+          key = "982b5243e1755a2d8263a9f8fededd2f"
+          urls = re.findall(r"<loc>(.*?)</loc>", open("_site/sitemap.xml").read())
+          body = json.dumps({"host": "zekunli.com", "key": key, "keyLocation": f"https://zekunli.com/{key}.txt", "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", body, {"Content-Type": "application/json; charset=utf-8"})
+          print(len(urls), "urls ->", urllib.request.urlopen(req, timeout=30).status)
+          PY
