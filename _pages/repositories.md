@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Open-source repositories of Zekun Li (李泽坤, GitHub: Zecoon) on agentic LLMs, medical deep research and multi-agent systems.
+description: "Open-source repositories of Zekun Li (李泽坤, GitHub: Zecoon) on agentic LLMs, medical deep research and multi-agent systems."
 nav: false
 nav_order: 4
 ---

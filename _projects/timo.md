@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TIMO
-description: TIMO-OSS-Search-Preview: lightweight agentic models (4B / 27B) for medical deep research that search the web, read pages and reason over evidence. Oral at BEIHAI 2026.
+description: "TIMO-OSS-Search-Preview: lightweight agentic models (4B / 27B) for medical deep research that search the web, read pages and reason over evidence. Oral at BEIHAI 2026."
 importance: 1
 category: research
 ---
