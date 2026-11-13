@@ -299,6 +299,18 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "baidu_verify_*.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "ByteDanceVerify.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "982b5243e1755a2d8263a9f8fededd2f.txt"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
