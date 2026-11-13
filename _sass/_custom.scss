@@ -704,3 +704,6 @@ html[data-theme="dark"] .like-btn > i {
   max-width: 640px;
   image-rendering: auto;
 }
+
+// 页脚两行(Last updated / 备案号)：显式指定文字色，避免被 span 默认色盖住
+footer.fixed-bottom .container > span { color: var(--global-footer-text-color); }

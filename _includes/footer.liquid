@@ -1,16 +1,9 @@
 {% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
-  {% if site.impressum_path %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-  {% endif %}
   {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+    <span class="d-block">Last updated: {{ 'now' | date: '%B %d, %Y' }}</span>
   {% endif %}
   {% if site.icp_beian %}
-    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">{{ site.icp_beian }}</a>
+    <span class="d-block"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">{{ site.icp_beian }}</a></span>
   {% endif %}
 {% endcapture %}
 
