@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: "Open-source repositories of Zekun Li (李泽坤, GitHub: Zecoon) on agentic LLMs, medical deep research and multi-agent systems."
+description: "李泽坤（Zekun Li，清华大学 Tsinghua University，GitHub: Zecoon）的开源代码仓库。Open-source repositories of Zekun Li."
 nav: false
 nav_order: 4
 ---

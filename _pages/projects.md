@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: "Research projects by Zekun Li (李泽坤) at Tsinghua AIR, including TIMO, a series of lightweight agentic models for medical deep research."
+description: "李泽坤（Zekun Li，清华大学 Tsinghua University）的研究项目，包括 TIMO 系列医学深度研究轻量级智能体模型。Research projects by Zekun Li, Tsinghua AIR."
 nav: true
 nav_order: 3
 display_categories: [research]

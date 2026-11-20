@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TIMO
-description: "TIMO-OSS-Search-Preview: lightweight agentic models (4B / 27B) for medical deep research that search the web, read pages and reason over evidence. Oral at BEIHAI 2026."
+description: "TIMO：清华大学（Tsinghua University）面向医学深度研究的轻量级智能体模型（4B / 27B），会检索网页、阅读并基于证据推理。Lightweight agentic models for medical deep research."
 importance: 1
 category: research
 ---
