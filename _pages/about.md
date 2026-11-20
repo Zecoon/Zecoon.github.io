@@ -26,6 +26,12 @@ interests:
 
 selected_papers: true
 social: true
+# 首页头部的外链按钮(带文字，比纯图标醒目;rel="me" 声明是本人资料)
+profile_links:
+  - { name: Google Scholar, icon: ai ai-google-scholar, url: "https://scholar.google.com/citations?user=Bamm7sQAAAAJ" }
+  - { name: GitHub, icon: fa-brands fa-github, url: "https://github.com/Zecoon" }
+  - { name: Semantic Scholar, icon: ai ai-semantic-scholar, url: "https://www.semanticscholar.org/author/2447411362" }
+  - { name: ORCID, icon: ai ai-orcid, url: "https://orcid.org/0009-0001-6856-6516" }
 
 announcements:
   enabled: true

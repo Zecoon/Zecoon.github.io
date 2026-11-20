@@ -22,7 +22,11 @@ layout: default
       {% endif %}
       <div class="hero-bio">{{ content }}</div>
       {% if page.social %}
-        <div class="hero-social">{% social_links %}</div>
+        <div class="hero-social">
+          {% for l in page.profile_links %}
+            <a href="{{ l.url }}" target="_blank" rel="me noopener"><i class="{{ l.icon }}"></i><span>{{ l.name }}</span></a>
+          {% endfor %}
+        </div>
       {% endif %}
     </div>
     <div class="hero-photo">
