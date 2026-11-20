@@ -1,5 +1,6 @@
 ---
 layout: cv
+published: false # 模板示例简历(Albert Einstein)，真实简历准备好前不发布
 permalink: /cv/
 title: CV
 nav: false
